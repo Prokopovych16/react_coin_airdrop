@@ -44,5 +44,6 @@
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "prettier": "^3.4.2"
-  }
+  },
+  "homepage": "https://Prokopovych16.github.io/react_coin_airdrop"
 }

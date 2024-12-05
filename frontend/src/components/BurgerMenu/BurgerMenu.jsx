@@ -11,7 +11,7 @@ export const BurgerMenu = () => {
             return (
               <a 
                 key={item.name} 
-                href={item.link}
+                href={`#${item.link}`}
               >
                 <li className={styles.burgerMenu__navigation_list_item}>
                   {item.name}
