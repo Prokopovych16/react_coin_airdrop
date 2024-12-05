@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.29fc2d77.css",
-    "main.js": "/static/js/main.680b6cd7.js",
-    "static/media/bc-image-pro.avif": "/static/media/bc-image-pro.dd5b2551ccece4c7bf12.avif",
-    "index.html": "/index.html",
-    "static/media/bc-circles.svg": "/static/media/bc-circles.84217382462cb8908c6a.svg",
-    "static/media/menu-2.svg": "/static/media/menu-2.bee05d69f05260ec2d22.svg",
-    "static/media/menu-1.svg": "/static/media/menu-1.d3082792dec66894864f.svg",
-    "static/media/close-multiply.svg": "/static/media/close-multiply.f042d1e1c36ae9bccc79.svg",
-    "main.29fc2d77.css.map": "/static/css/main.29fc2d77.css.map",
-    "main.680b6cd7.js.map": "/static/js/main.680b6cd7.js.map"
+    "main.css": "/react_coin_airdrop/static/css/main.f6c38e28.css",
+    "main.js": "/react_coin_airdrop/static/js/main.680b6cd7.js",
+    "static/media/bc-image-pro.avif": "/react_coin_airdrop/static/media/bc-image-pro.dd5b2551ccece4c7bf12.avif",
+    "index.html": "/react_coin_airdrop/index.html",
+    "static/media/bc-circles.svg": "/react_coin_airdrop/static/media/bc-circles.84217382462cb8908c6a.svg",
+    "static/media/menu-2.svg": "/react_coin_airdrop/static/media/menu-2.bee05d69f05260ec2d22.svg",
+    "static/media/menu-1.svg": "/react_coin_airdrop/static/media/menu-1.d3082792dec66894864f.svg",
+    "static/media/close-multiply.svg": "/react_coin_airdrop/static/media/close-multiply.f042d1e1c36ae9bccc79.svg",
+    "main.f6c38e28.css.map": "/react_coin_airdrop/static/css/main.f6c38e28.css.map",
+    "main.680b6cd7.js.map": "/react_coin_airdrop/static/js/main.680b6cd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.29fc2d77.css",
+    "static/css/main.f6c38e28.css",
     "static/js/main.680b6cd7.js"
   ]
 }
