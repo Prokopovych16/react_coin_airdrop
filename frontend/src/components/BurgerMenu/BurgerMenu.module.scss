@@ -1,0 +1,24 @@
+@use '../../utils/mixins.scss' as *;
+
+
+.burgerMenu {
+  height: 100vh;
+  background-color: #fff;
+  padding: 100px;
+
+  &__navigation {
+    &_list {
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      
+      &_item {
+        color: #6c6c6c;
+
+        @include hover(color, #000);
+      }
+    }
+  }
+}

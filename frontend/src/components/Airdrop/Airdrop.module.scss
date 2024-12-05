@@ -1,0 +1,98 @@
+@use '../../utils/mixins.scss' as *;
+
+.airdrop {
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__general {
+
+    &_title {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 400;
+    }
+
+    &_airdrop {
+      margin-bottom: 60px;
+      padding: 100px 0 0 0;
+      position: relative;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &_img {
+        width: 350px;
+      }
+
+      &_timer {
+        position: absolute;
+        height: 80px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 16px;
+        width: 100%;
+
+        @include on-tablet {
+          width: 600px;
+        }
+
+        &_text {
+          line-height: 80px;
+          text-align: center;
+          font-weight: 600;
+          color: black;
+          font-size: 32px;
+          
+          @include on-tablet {
+            font-size: 48px;
+          }
+        }
+      }
+    }
+
+    &_bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      @include on-tablet {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      &_text {
+        text-align: center;
+        width: 100%;
+        line-height: 1.7;
+
+        @include on-tablet {
+          text-align: left;
+          width: 50%;
+        }
+      }
+
+      &_button {
+        width: 100%;
+        height: 60px;
+        background-color: #0f84ec;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include hover(background-color, #0468c1);
+
+        @include on-tablet {
+          width: 30%;
+        }
+
+        &_text {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

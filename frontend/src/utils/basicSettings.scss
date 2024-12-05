@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, p, img {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+a, h1, h2, h3, h4, img, div {
+  transition: all 0.3s ease-out;
+}
+
+.disabled {
+  pointer-events: none;
+  color: gray;
+  cursor: not-allowed;
+}

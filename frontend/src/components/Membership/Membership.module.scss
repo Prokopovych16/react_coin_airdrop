@@ -1,0 +1,65 @@
+@use '../../utils/mixins.scss' as *;
+
+.membership {
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__general {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../public/img/about/bc-circles.svg');
+    background-repeat: repeat-x;
+    /* Repeat horizontally */
+    background-size: 50% 100%;
+
+    &_title {
+      margin-bottom: 60px;
+      font-weight: 400;
+      font-size: 36px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    input {
+      width: 300px;
+      height: 50px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      border-radius: 16px;
+
+      // Приклад стилю для фокусу на інпуті
+      &:focus {
+        border: 2px solid;
+        border-color: #007bff;
+        outline: none;
+      }
+    }
+  }
+
+  &__submit {
+    &_button {
+      margin: 0 auto;
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      border-radius: 16px;
+      background-color: #0f84ec;
+      border-radius: 8px;
+      color: #fff;
+      cursor: pointer;
+
+      @include hover(background-color, #0468c1); 
+    }
+  }
+}

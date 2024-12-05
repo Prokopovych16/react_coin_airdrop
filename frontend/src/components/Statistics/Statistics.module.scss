@@ -1,0 +1,31 @@
+@use '../../utils/mixins.scss' as *;
+
+.statistics {
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__general {
+    &_title {
+      margin-bottom: 50px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 36px;
+    }
+
+    &_graphic {
+      margin-bottom: 70px;
+      max-width: 100%;
+    }
+
+    &_text {
+      width: 100%;
+      text-align: center;
+
+      @include on-tablet {
+        margin: 0 auto;
+        width: 50%;
+      }
+    }
+  }
+}

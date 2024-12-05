@@ -1,0 +1,20 @@
+@use '../../utils/mixins.scss' as *;
+
+.navigation {
+
+  &__list {
+    list-style-type:none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 16px;
+    height: 100%;
+
+    &_item {
+      height: 100%;
+      color: #6c6c6c;
+
+      @include hover(color, #000);
+    }
+  }
+}

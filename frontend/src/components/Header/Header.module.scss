@@ -1,0 +1,108 @@
+@use '../../utils/mixins.scss' as *;
+
+.header {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__content {
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_logo {
+      @include hover(transform, scale(1.05));
+    }
+
+    &_nav {
+      display: none;
+
+      @include on-desktop {
+        display: initial;
+      }
+    }
+
+    &_register {
+      display: none;
+
+      @include on-desktop {
+        display: initial;
+      }
+
+      &_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        padding: 16px 24px;
+        background-color: #0f84ec;
+        border-radius: 8px;
+
+        @include hover(background-color, #0468c1);
+
+        &_text {
+          color: #fff;
+        }
+
+        &_icon {
+          width: 24px;
+        }
+      }
+    }
+
+    &_burger {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      @include on-desktop {
+        display: none;
+      }
+
+      &_icon {
+        width: 36px;
+        height: 36px;
+        background-image: url('../../../public/img/icons/menu-1.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include hover(background-image, url('../../../public/img/icons/menu-2.svg'));
+
+        &Close {
+          width: 36px;
+          height: 36px;
+          background-image: url('../../../public/img/icons/close-multiply.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+
+          @include hover(transform, scale(1.2));
+        }
+      }
+    }
+  }
+
+  &__burgerMenu {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    max-height: 500px; //
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease-out;
+
+    &.header__burgerMenu_open {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
