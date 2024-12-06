@@ -4,27 +4,27 @@
 
 Clone the project repository:
 ```
-  git clone https://github.com/Prokopovych16/react_coin_airdrop.git
+git clone https://github.com/Prokopovych16/react_coin_airdrop.git
 ```
 
 Navigate to the project directory:
 ```
-  cd react_coin_airdrop
+cd react_coin_airdrop
 ```
 
 Navigate to the project folder code:
 ```
-  cd frontend
+cd frontend
 ```
 
 **Install the required dependencies:** Ensure you have Node.js installed on your machine. Then run:
 ```
-  npm i
+npm i
 ```
 
 **Start the project:** Run the following command to start the development server:
 ```
-  npm start
+npm start
 ```
 
 This will open the project in your default browser at http://localhost:3000.
