@@ -32,13 +32,13 @@ export const Statistics = () => {
   return (
     <div className={styles.statistics__container}>
       <div className={styles.statistics__general}>
-        <h1 className={styles.statistics__general_title}>
+        <h1 data-aos="zoom-in" className={styles.statistics__general_title}>
           Projected <b>Value Growth</b>: A Vision for the Future
         </h1>
         <div className={styles.statistics__general_graphic}>
           <Line data={chartData} />
         </div>
-        <p className={styles.statistics__general_text}>
+        <p data-aos="fade-up" className={styles.statistics__general_text}>
           This chart illustrates the projected 
           growth in value over the next several months. 
           The data highlights the expected increase in 

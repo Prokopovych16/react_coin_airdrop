@@ -35,10 +35,10 @@ export const Airdrop = () => {
   return (
     <div className={styles.airdrop__container}>
       <div className={styles.airdrop__general}>
-        <h1 className={styles.airdrop__general_title}>Claim Your <b>Share</b> of Innovation!</h1>
+        <h1 data-aos="zoom-in" className={styles.airdrop__general_title}>Claim Your <b>Share</b> of Innovation!</h1>
 
         <div className={styles.airdrop__general_airdrop}>
-          <img className={styles.airdrop__general_airdrop_img} src="img/icons/token_favi.png" alt="token" />
+          <img data-aos="flip-left" className={styles.airdrop__general_airdrop_img} src="img/icons/token_favi.png" alt="token" />
           <div className={styles.airdrop__general_airdrop_timer}>
             <p className={styles.airdrop__general_airdrop_timer_text}>
               {time}
@@ -46,13 +46,13 @@ export const Airdrop = () => {
           </div>
         </div>
         <div className={styles.airdrop__general_bottom}>
-          <p className={styles.airdrop__general_bottom_text}>
+          <p data-aos="zoom-in-down" className={styles.airdrop__general_bottom_text}>
             <b>Don't miss your chance</b> to be part of the future.
             This is your opportunity to join the revolution
             and secure exclusive access to our token. Act now
             before the timer runs out—time is of the essence in making history!
           </p>
-          <div className={styles.airdrop__general_bottom_button}>
+          <div data-aos="zoom-in-left" className={styles.airdrop__general_bottom_button}>
             <a href='#membership'>
               <p className={styles.airdrop__general_bottom_button_text}>
                 Take part

@@ -1,0 +1,88 @@
+@use '../../utils/mixins.scss' as *;
+
+.footer {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -8px 24px;
+
+  &__container {
+    @include content-padding-inline;
+  }
+
+  &__general {
+    padding: 80px 0 2px 0;
+
+    &_logo {
+      text-align: center;
+      margin-bottom: 40px;
+
+      img {
+        width: 160px;
+        @include hover(transform, scale(1.1));
+      }
+    }
+
+    &_socials {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+
+      @include on-tablet {
+        justify-content: center;
+        gap: 40px;
+      }
+
+      @include on-desktop {
+        gap: 50px;
+      }
+
+      &_social {
+        width: 48px;
+        @include hover(transform, scale(1.1));
+
+        @include on-tablet {
+          width: 56px;
+        }
+      }
+    }
+
+    &_navigation {
+      margin-bottom: 20px;
+      display: flex;
+      
+      @include on-tablet {
+        justify-content: center;
+      }
+
+      &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0;
+        list-style-type: none;
+
+        @include on-tablet {
+          flex-direction: row;
+          gap: 80px;
+        }
+
+        @include on-desktop {
+          gap: 140px;
+        }
+
+        &_item {
+          font-size: 18px;
+
+          @include hover(transform, scale(1.1));
+        }
+      }
+    }
+
+    &_copyright {
+      text-align: center;
+      color: black;
+      font-size: 12px;
+    }
+  }
+}

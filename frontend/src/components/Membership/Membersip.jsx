@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Membership.module.scss';
 
 export const Membership = () => {
@@ -6,12 +6,14 @@ export const Membership = () => {
   const [email, setEmail] = useState('');
   const [wallet, setWallet] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (name && email && wallet) {
-      setSuccessMessage('Form was succesfulli submitted');
+      setSuccessMessage('Form was succesfully submitted');
+      setIsVisible(true);
 
       setName('');
       setEmail('');
@@ -22,15 +24,27 @@ export const Membership = () => {
     }
   };
 
+  useEffect(() => {
+    if (successMessage) {
+      const timer = setTimeout(() => {
+        setIsVisible(false);
+
+        setTimeout(() => setSuccessMessage(null), 500);
+      }, 3000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [successMessage]);
+
   return (
     <div className={styles.membership__container}>
       <div className={styles.membership__general}>
-        <h1 className={styles.membership__general_title}>
+        <h1 data-aos="fade-down-right" className={styles.membership__general_title}>
           Want to become <b>part</b> of the community?
         </h1>
 
         <form onSubmit={handleSubmit} className={styles.membership__form}>
-          <div className={styles.membership__form_group}>
+          <div data-aos="fade-right" className={styles.membership__form_group}>
             <input
               type="text"
               id="name"
@@ -41,7 +55,7 @@ export const Membership = () => {
             />
           </div>
 
-          <div className={styles.membership__form_group}>
+          <div data-aos="fade-left" className={styles.membership__form_group}>
             <input
               type="email"
               id="email"
@@ -52,7 +66,7 @@ export const Membership = () => {
             />
           </div>
 
-          <div className={styles.membership__form_group}>
+          <div data-aos="fade-right" className={styles.membership__form_group}>
             <input
               type="text"
               id="wallet"
@@ -63,13 +77,19 @@ export const Membership = () => {
             />
           </div>
 
-          <button type="submit" className={styles.membership__submit_button}>
+          <button data-aos="fade-left" type="submit" className={styles.membership__submit_button}>
             Apply
           </button>
         </form>
 
         {successMessage && (
-          <div className={styles.membership__success_message}>
+          <div
+            className={`${styles.membership__success_message} ${
+              isVisible
+                ? styles.membership__success_message_visible
+                : styles.membership__success_message_hidden
+            }`}
+          >
             {successMessage}
           </div>
         )}

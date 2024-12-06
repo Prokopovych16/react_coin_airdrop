@@ -90,17 +90,20 @@
   &__burgerMenu {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     position: absolute;
-    right: 0;
+    left: 0;
     width: 300px;
-    max-height: 500px; //
+    max-height: 500px;
     overflow: hidden;
+    visibility: hidden;
     opacity: 0;
     transform: translateY(-10px);
-    transition: all 0.3s ease-out;
-
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out, visibility 0s 0.3s;
+  
     &.header__burgerMenu_open {
+      visibility: visible;
       opacity: 1;
       transform: translateY(0);
+      transition: transform 0.3s ease-out, opacity 0.3s ease-out;
     }
   }
 }
