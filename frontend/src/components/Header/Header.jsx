@@ -39,7 +39,7 @@ export const Header = () => {
         <div className={styles.header__content}>
           <div data-aos="fade-down-right" className={styles.header__content_logo}>
             <a href="https://zam.io/" target="_blank" rel="noreferrer">
-              <img src="/img/logo.svg" alt="top-logo" />
+              <img src="img/logo.svg" alt="top-logo" />
             </a>
           </div>
           <nav data-aos="fade-down" className={styles.header__content_nav}>

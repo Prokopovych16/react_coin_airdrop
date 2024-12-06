@@ -1,10 +1,12 @@
 // minimal width for different sizes
 $tablet-min-width: 640px;
 $desktop-min-width: 1200px;
-// $huge-desktop-min-width: 1201px;
 
 
 // paddings for different sizes
 $padding-inline-for-mobile: 16px;
 $padding-inline-for-tablet: 56px;
 $padding-inline-for-desktop: 150px;
+
+$color-for-button: #0f84ec;
+$color-for-button-hover: #0468c1;

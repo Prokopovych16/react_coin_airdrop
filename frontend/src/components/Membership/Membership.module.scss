@@ -36,7 +36,6 @@
       font-size: 16px;
       border-radius: 16px;
 
-      // Приклад стилю для фокусу на інпуті
       &:focus {
         border: 2px solid;
         border-color: #007bff;
@@ -54,12 +53,12 @@
       border: none;
       font-size: 16px;
       border-radius: 16px;
-      background-color: #0f84ec;
+      background-color: $color-for-button;
       border-radius: 8px;
       color: #fff;
       cursor: pointer;
 
-      @include hover(background-color, #0468c1); 
+      @include hover(background-color, $color-for-button-hover); 
     }
   }
 

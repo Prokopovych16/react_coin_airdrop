@@ -9,8 +9,8 @@ import 'aos/dist/aos.css';
 export const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Встановіть тривалість анімації
-      once: true, // Анімація буде відбуватись тільки один раз
+      duration: 1000,
+      once: true,
     });
   }, []); 
 

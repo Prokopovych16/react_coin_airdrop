@@ -1,3 +1,4 @@
+// add socials
 export const socials = [
   {name: 'linkedin', path: 'img/icons/Linkedin.svg', link: 'https://www.linkedin.com/company/zamzambank/'},
   {name: 'youtube', path: 'img/icons/Youtube.svg', link: 'https://www.youtube.com/channel/UCpOWer30omBOXzWIW7h3gdg'},

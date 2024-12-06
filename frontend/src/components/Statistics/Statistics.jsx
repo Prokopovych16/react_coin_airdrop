@@ -17,11 +17,11 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 
 export const Statistics = () => {
   const chartData = {
-    labels: data.map(item => item.time), // Time (x-axis)
+    labels: data.map(item => item.time),
     datasets: [
       {
-        label: 'Price Over Time', // Line label
-        data: data.map(item => item.price), // Price (y-axis)
+        label: 'Price Over Time',
+        data: data.map(item => item.price),
         fill: false,
         borderColor: 'rgba(75, 192, 192, 1)',
         tension: 0.1,

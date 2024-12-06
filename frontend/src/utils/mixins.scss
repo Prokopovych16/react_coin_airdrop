@@ -12,12 +12,6 @@
   }
 }
 
-// @mixin on-huge-desktop() {
-//   @media (min-width: $huge-desktop-min-width) {
-//     @content;
-//   }
-// }
-
 // paddings
 @mixin content-padding-inline() {
   padding-inline: $padding-inline-for-mobile;

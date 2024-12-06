@@ -1,3 +1,4 @@
+// add additional info for the graphic
 export const data = [
   { price: 0.00022, time: '2023-01-01' },
   { price: 0.00023, time: '2023-02-01' },

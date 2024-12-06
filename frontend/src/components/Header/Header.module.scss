@@ -39,10 +39,10 @@
         align-items: center;
         gap: 6px;
         padding: 16px 24px;
-        background-color: #0f84ec;
+        background-color: $color-for-button;
         border-radius: 8px;
 
-        @include hover(background-color, #0468c1);
+        @include hover(background-color, $color-for-button-hover);
 
         &_text {
           color: #fff;
