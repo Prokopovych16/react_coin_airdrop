@@ -12,7 +12,7 @@ Navigate to the project directory:
 cd react_coin_airdrop
 ```
 
-Navigate to the project folder code:
+Navigate to the frontend folder:
 ```
 cd frontend
 ```
@@ -28,3 +28,7 @@ npm start
 ```
 
 This will open the project in your default browser at http://localhost:3000.
+
+
+If you'd like to preview the page without running it locally, you can visit the live preview at:
+https://prokopovych16.github.io/react_coin_airdrop/
