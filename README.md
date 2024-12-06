@@ -10,6 +10,10 @@ Clone the project repository:
 Navigate to the project directory:
 ```
   cd react_coin_airdrop
+```
+
+Navigate to the project folder code:
+```
   cd frontend
 ```
 
